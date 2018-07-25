@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recipe_application" >
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login_Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CheffRecipe_Activity"></activity>
+        <activity android:name=".InfoEdit_Acitivity"></activity>
+        <activity android:name=".Mypage_Activity"></activity>
+        <activity android:name=".Programlist_Activity_ref"></activity>
+        <activity android:name=".Programlist_Activity_3dae"></activity>
+        <activity android:name=".Programlist_Activity_home"></activity>
+        <activity android:name=".Programlist_Activity_my"></activity>
+        <activity android:name=".Programlist_Activity_today"></activity>
+        <activity android:name=".Programlist_Activity_wed"></activity>
+        <activity android:name=".Programlist_Click_Activity_3dae_00_tasty"></activity>
+        <activity android:name=".Programlist_Click_Activity_3dae_01_tasty"></activity>
+        <activity android:name=".Programlist_Click_Activity_home_00"></activity>
+        <activity android:name=".Programlist_Click_Activity_home_01"></activity>
+        <activity android:name=".Programlist_Click_Activity_my_00"></activity>
+        <activity android:name=".Programlist_Click_Activity_my_01"></activity>
+        <activity android:name=".Programlist_Click_Activity_ref_00"></activity>
+        <activity android:name=".Programlist_Click_Activity_ref_01"></activity>
+        <activity android:name=".Programlist_Click_Activity_today_00"></activity>
+        <activity android:name=".Programlist_Click_Activity_today_01"></activity>
+        <activity android:name=".Programlist_Click_Activity_wed_01_tasty"></activity>
+        <activity android:name=".Programlist_Click_Activity_wed_00_tasty"></activity>
+        <activity android:name=".RecommandRecipe_Activity"></activity>
+        <activity android:name=".Join_Activity"></activity>
+        <activity android:name=".EveryRecipe_Activity"></activity>
+        <activity android:name=".qna"></activity>
+        <activity android:name=".Write_Activity"></activity>
+        <activity android:name=".MyRecipe_Activity"></activity>
+        <activity android:name=".innerContent_Acitivity"></activity>
+    </application>
+
+</manifest>

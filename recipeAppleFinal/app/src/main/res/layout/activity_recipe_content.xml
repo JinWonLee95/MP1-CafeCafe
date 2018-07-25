@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:background="@drawable/background">
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_margin="10dp"
+            android:background="@drawable/board1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="제목 :"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:text = "제목"
+                android:gravity="center"
+                android:id="@+id/inner_title"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_margin="5dp"
+            android:background="@drawable/board1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="TIP :"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:text = "TIP"
+                android:id="@+id/inner_tip"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/board1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text = "재료"
+                android:gravity="center"
+
+                />
+            <TextView
+            android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+            android:text = "재료"
+            android:gravity="center"
+                android:id="@+id/inner_ingre"
+
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/innercontent_listview">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/board1"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <EditText
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="3"
+               android:id="@+id/inner_review_edittext"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:hint = "댓글"
+               android:gravity="center"
+                android:onClick="onClick"
+                android:id="@+id/review_button"
+            />
+
+       </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inner_review_listview">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
